@@ -1,0 +1,21 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 48px;
+
+    background-color: var(--tertiary-color);
+
+    img {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: 20% 10%;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

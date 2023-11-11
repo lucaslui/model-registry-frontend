@@ -1,0 +1,44 @@
+.breadcrumbs {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 24px 48px 12px 48px;
+
+    .breadcrumb-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        text-decoration: none;
+
+        gap: 8px;
+
+        &:last-child {
+            a {
+                color: #333;
+                pointer-events: none;
+                text-decoration: none;
+            }
+        }
+
+        a {
+            color: #333;
+            
+            font-size: 18px;
+            font-weight: 400;
+
+            text-decoration: underline;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+                color: #007bff;
+            }
+        }
+    }
+}
