@@ -15,7 +15,8 @@ const ModelTable: React.FC = () => {
           try {
             const response = await fetch('/models.json');
             const jsonDados = await response.json();
-            setModels(jsonDados);
+            const jsonDadosFormated = Object.keys(jsonDados).map((key) => jsonDados[key]);
+            setModels(jsonDadosFormated);
           } catch (error) {
             console.error('Erro ao buscar dados:', error);
           }
@@ -61,10 +62,10 @@ const ModelTable: React.FC = () => {
             <table>
                 <thead>
                     <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
                         <th>Autor</th>
                         <th>Tipo</th>
-                        <th>Biblioteca</th>
-                        <th>Classe</th>
                         <th>Status Modelo</th>
                         <th>Status Monitoramento</th>
                         <th>Data de Registro</th>
@@ -73,11 +74,11 @@ const ModelTable: React.FC = () => {
                 </thead>
                 <tbody>
                     {models.filter(searchLogic).slice(start, end).map((model) => (
-                        <tr key={model.id} onClick={() => handleOnClick(model.id)}>
+                        <tr key={model.id_model} onClick={() => handleOnClick(model.id_model)}>
+                            <td>{model.id_model}</td>
+                            <td>{model.model_name}</td>
                             <td>{model.model_information?.author ?? 'sem autor'}</td>
                             <td>{model.model_information?.model_type}</td>
-                            <td>{model.model_parameters?.lib_name}</td>
-                            <td>{model.model_parameters?.model_class_name}</td>
                             <td>{model.models_status?.model}</td>
                             <td>{model.models_status?.monitoring}</td>
                             <td>{model.model_information?.registry_date}</td>

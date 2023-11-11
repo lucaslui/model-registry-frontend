@@ -14,7 +14,8 @@ const ModelDetails = () => {
           try {
             const response = await fetch('/models.json');
             const jsonDados = await response.json();
-            setModels(jsonDados);
+            const jsonDadosFormated = Object.keys(jsonDados).map((key) => jsonDados[key]);
+            setModels(jsonDadosFormated);
           } catch (error) {
             console.error('Erro ao buscar dados:', error);
           }
@@ -23,15 +24,19 @@ const ModelDetails = () => {
         fetchData();
       }, []);
 
-    const model: Model | undefined = models.find((modelData) => modelData.id === modelId)
+    const model: Model | undefined = models.find((modelData) => modelData.id_model === modelId)
 
     return (
         <div className='model-details-content'>
-            <h1>Detalhes do Modelo "{model?.id}"</h1>
+            <h1>Detalhes do Modelo "{model?.id_model}"</h1>
             <div className='details'>
                 <div className='detail-column'>
                     <h2> Informações Gerais </h2>
                     <table>
+                        <tr>
+                            <td className='label'><label htmlFor="name"> Nome </label></td>
+                            <td><span> {model?.model_name} </span> </td>
+                        </tr>
                         <tr>
                             <td className='label'><label htmlFor="author"> Autor </label></td>
                             <td><span> {model?.model_information?.author} </span> </td>

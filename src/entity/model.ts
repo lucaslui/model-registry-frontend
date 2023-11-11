@@ -1,5 +1,7 @@
 export type Model = {
-    id?: string
+    id_model?: string
+
+    model_name?: "modelo 1"
 
     model_information: {
         author?: string
