@@ -1,0 +1,402 @@
+[
+    {
+        "id": "102312301278390",
+        "model_information": {
+            "author": "Thiago Manuel Silva",
+            "registry_date": "01/2023",
+            "last_update": "04/2023",
+            "model_type": "classification",
+            "version": 3,
+            "features": {
+                "pk": "nro_persona",
+                "categorical": [
+                    "param1",
+                    "param2",
+                    "param3",
+                    "param4",
+                    "param5",
+                    "param6"
+                ],
+                "numerical": [
+                    "param6",
+                    "param7",
+                    "param8",
+                    "param9",
+                    "param20",
+                    "param21"
+                ],
+                "output": {
+                    "predict": "predict1",
+                    "target": "target1"
+                }
+            }
+        },
+        "model_artifacts": {
+            "data_train_path": "",
+            "data_test_path": "",
+            "model_path": "s3://bucket/model/model.pkl",
+            "wkf_source": "wkf_source"
+        },
+        "models_status": {
+            "model": "active",
+            "monitoring": "active"
+        },
+        "model_alerts": {
+            "sns_arn": [
+                "arn:aws:sns:us-east-1:123456789012:my_topic1",
+                "arn:aws:sns:us-east-1:123456789012:my_topic2"
+            ]
+        },
+        "model_metrics": {
+            "train_metrics": {
+                "gini": 2
+            },
+            "test_metrics": {
+                "gini": 2
+            }
+        },
+        "model_monitoring": {
+            "drift_test": true,
+            "quality_test": true,
+            "target_test": true,
+            "stattest": "psi_10bins"
+        },
+        "model_parameters": {
+            "lib_name": "xgboost",
+            "model_class_name": "XGBClassifier",
+            "hyperparameter": {
+                "max_depth": 2,
+                "learning_rate": 2,
+                "gamma": 2,
+                "min_child_weight": 2,
+                "subsample": 2,
+                "colsample_bytree": 2,
+                "scale_pos_weight": 2,
+                "reg_alpha": 2,
+                "reg_lambda": 2,
+                "objective": "binary:logistic",
+                "booster": "gbtree"
+            }
+        }
+    },
+    {
+        "id": "102312301278390",
+        "model_information": {
+            "author": "Thiago Manuel Silva",
+            "registry_date": "01/2023",
+            "last_update": "04/2023",
+            "model_type": "classification",
+            "version": 3,
+            "features": {
+                "pk": "nro_persona",
+                "categorical": [
+                    "param1",
+                    "param2",
+                    "param3",
+                    "param4",
+                    "param5",
+                    "param6"
+                ],
+                "numerical": [
+                    "param6",
+                    "param7",
+                    "param8",
+                    "param9",
+                    "param20",
+                    "param21"
+                ],
+                "output": {
+                    "predict": "predict1",
+                    "target": "target1"
+                }
+            }
+        },
+        "model_artifacts": {
+            "data_train_path": "",
+            "data_test_path": "",
+            "model_path": "s3://bucket/model/model.pkl",
+            "wkf_source": "wkf_source"
+        },
+        "models_status": {
+            "model": "active",
+            "monitoring": "active"
+        },
+        "model_alerts": {
+            "sns_arn": [
+                "arn:aws:sns:us-east-1:123456789012:my_topic1",
+                "arn:aws:sns:us-east-1:123456789012:my_topic2"
+            ]
+        },
+        "model_metrics": {
+            "train_metrics": {
+                "gini": 2
+            },
+            "test_metrics": {
+                "gini": 2
+            }
+        },
+        "model_monitoring": {
+            "drift_test": true,
+            "quality_test": true,
+            "target_test": true,
+            "stattest": "psi_10bins"
+        },
+        "model_parameters": {
+            "lib_name": "xgboost",
+            "model_class_name": "XGBClassifier",
+            "hyperparameter": {
+                "max_depth": 2,
+                "learning_rate": 2,
+                "gamma": 2,
+                "min_child_weight": 2,
+                "subsample": 2,
+                "colsample_bytree": 2,
+                "scale_pos_weight": 2,
+                "reg_alpha": 2,
+                "reg_lambda": 2,
+                "objective": "binary:logistic",
+                "booster": "gbtree"
+            }
+        }
+    },
+    {
+        "id": "102312301278390",
+        "model_information": {
+            "author": "Silvio Pereira",
+            "registry_date": "01/2023",
+            "last_update": "04/2023",
+            "model_type": "classification",
+            "version": 3,
+            "features": {
+                "pk": "nro_persona",
+                "categorical": [
+                    "param1",
+                    "param2",
+                    "param3",
+                    "param4",
+                    "param5",
+                    "param6"
+                ],
+                "numerical": [
+                    "param6",
+                    "param7",
+                    "param8",
+                    "param9",
+                    "param20",
+                    "param21"
+                ],
+                "output": {
+                    "predict": "predict1",
+                    "target": "target1"
+                }
+            }
+        },
+        "model_artifacts": {
+            "data_train_path": "",
+            "data_test_path": "",
+            "model_path": "s3://bucket/model/model.pkl",
+            "wkf_source": "wkf_source"
+        },
+        "models_status": {
+            "model": "active",
+            "monitoring": "active"
+        },
+        "model_alerts": {
+            "sns_arn": [
+                "arn:aws:sns:us-east-1:123456789012:my_topic1",
+                "arn:aws:sns:us-east-1:123456789012:my_topic2"
+            ]
+        },
+        "model_metrics": {
+            "train_metrics": {
+                "gini": 2
+            },
+            "test_metrics": {
+                "gini": 2
+            }
+        },
+        "model_monitoring": {
+            "drift_test": true,
+            "quality_test": true,
+            "target_test": true,
+            "stattest": "psi_10bins"
+        },
+        "model_parameters": {
+            "lib_name": "xgboost",
+            "model_class_name": "XGBClassifier",
+            "hyperparameter": {
+                "max_depth": 2,
+                "learning_rate": 2,
+                "gamma": 2,
+                "min_child_weight": 2,
+                "subsample": 2,
+                "colsample_bytree": 2,
+                "scale_pos_weight": 2,
+                "reg_alpha": 2,
+                "reg_lambda": 2,
+                "objective": "binary:logistic",
+                "booster": "gbtree"
+            }
+        }
+    },
+    {
+        "id": "102312301278390",
+        "model_information": {
+            "author": "Sandra Regina",
+            "registry_date": "05/2023",
+            "last_update": "07/2023",
+            "model_type": "regression",
+            "version": 3,
+            "features": {
+                "pk": "nro_persona",
+                "categorical": [
+                    "param1",
+                    "param2",
+                    "param3",
+                    "param4",
+                    "param5",
+                    "param6"
+                ],
+                "numerical": [
+                    "param6",
+                    "param7",
+                    "param8",
+                    "param9",
+                    "param20",
+                    "param21"
+                ],
+                "output": {
+                    "predict": "predict1",
+                    "target": "target1"
+                }
+            }
+        },
+        "model_artifacts": {
+            "data_train_path": "",
+            "data_test_path": "",
+            "model_path": "s3://bucket/model/model.pkl",
+            "wkf_source": "wkf_source"
+        },
+        "models_status": {
+            "model": "active",
+            "monitoring": "active"
+        },
+        "model_alerts": {
+            "sns_arn": [
+                "arn:aws:sns:us-east-1:123456789012:my_topic1",
+                "arn:aws:sns:us-east-1:123456789012:my_topic2"
+            ]
+        },
+        "model_metrics": {
+            "train_metrics": {
+                "gini": 2
+            },
+            "test_metrics": {
+                "gini": 2
+            }
+        },
+        "model_monitoring": {
+            "drift_test": true,
+            "quality_test": true,
+            "target_test": true,
+            "stattest": "psi_10bins"
+        },
+        "model_parameters": {
+            "lib_name": "xgboost",
+            "model_class_name": "XGBClassifier",
+            "hyperparameter": {
+                "max_depth": 2,
+                "learning_rate": 2,
+                "gamma": 2,
+                "min_child_weight": 2,
+                "subsample": 2,
+                "colsample_bytree": 2,
+                "scale_pos_weight": 2,
+                "reg_alpha": 2,
+                "reg_lambda": 2,
+                "objective": "binary:logistic",
+                "booster": "gbtree"
+            }
+        }
+    },
+    {
+        "id": "102312301278390",
+        "model_information": {
+            "author": "Cecília Orbe",
+            "registry_date": "01/2023",
+            "last_update": "04/2023",
+            "model_type": "classification",
+            "version": 3,
+            "features": {
+                "pk": "nro_persona",
+                "categorical": [
+                    "param1",
+                    "param2",
+                    "param3",
+                    "param4",
+                    "param5",
+                    "param6"
+                ],
+                "numerical": [
+                    "param6",
+                    "param7",
+                    "param8",
+                    "param9",
+                    "param20",
+                    "param21"
+                ],
+                "output": {
+                    "predict": "predict1",
+                    "target": "target1"
+                }
+            }
+        },
+        "model_artifacts": {
+            "data_train_path": "",
+            "data_test_path": "",
+            "model_path": "s3://bucket/model/model.pkl",
+            "wkf_source": "wkf_source"
+        },
+        "models_status": {
+            "model": "active",
+            "monitoring": "active"
+        },
+        "model_alerts": {
+            "sns_arn": [
+                "arn:aws:sns:us-east-1:123456789012:my_topic1",
+                "arn:aws:sns:us-east-1:123456789012:my_topic2"
+            ]
+        },
+        "model_metrics": {
+            "train_metrics": {
+                "gini": 2
+            },
+            "test_metrics": {
+                "gini": 2
+            }
+        },
+        "model_monitoring": {
+            "drift_test": true,
+            "quality_test": true,
+            "target_test": true,
+            "stattest": "psi_10bins"
+        },
+        "model_parameters": {
+            "lib_name": "xgboost",
+            "model_class_name": "XGBClassifier",
+            "hyperparameter": {
+                "max_depth": 2,
+                "learning_rate": 2,
+                "gamma": 2,
+                "min_child_weight": 2,
+                "subsample": 2,
+                "colsample_bytree": 2,
+                "scale_pos_weight": 2,
+                "reg_alpha": 2,
+                "reg_lambda": 2,
+                "objective": "binary:logistic",
+                "booster": "gbtree"
+            }
+        }
+    }
+]
